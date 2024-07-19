@@ -2,3 +2,12 @@
   Переменные для вашего проекта
   и их переопределение под различные устройства
 */
+
+:root {
+  --header-color: ;
+  --text-color: ;
+  --text-color: ;
+  --font-family: 'IBM Plex mono';
+  --font-size: 18px;
+  --line-height: 23.4px;
+}
