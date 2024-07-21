@@ -2,10 +2,12 @@
 
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+  max-inline-size: 1024px;
   font-family: var(--font-family);
   line-height: var(--line-height);
   font-size: var(--font-size);
-  background-image: var(--background-image);
+  color: var(--text-color);
+  background-color: var(--background-color);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -13,14 +15,119 @@
 }
 
 .header {
+  padding: 20px;
+  display: grid;
+  position: relative;
+  min-block-size: 100vh;
+  background-image: var(--background-image);
+}
+
+.header__rec {
 
 }
 
-.header_title {
-font-size: 157px;
-line-height: 129.53px;
+.header__theme-menu {
+  justify-self: center;
+
+}
+
+.header__theme-menu-list {
+  display: flex;
+  flex-direction: wrap;
+  gap: 10px;
+}
+
+.header__theme-menu-button {
+  background-color: transparent;
+}
+
+.page_title {
+  font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  line-height: 129.53px;
+  font-weight: 700;
+  color: var(--header-color);
+  text-shadow: 4px 4px 0 var(--accent-color);
 }
 
 .header_paragraph {
+  block-size: 71px;
+  font-weight: 700;
+  max-inline-size: 491px;
+  color: var(--title-color);
+  background-color: var(--accent-color);
+}
 
+.main {
+  padding: 60px 20px 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.section {
+  display: grid;
+  gap: 20px;
+}
+
+.section__title {
+  font-size: var(--font-size);
+  font-weight: 700;
+  color: var(--accent-color);
+}
+
+.title-decor {
+  font-size: var(--font-size);
+  font-weight: 700;
+  color: var(--title-color);
+  background-color: var(--accent-color);
+}
+
+.special {
+  font-weight: 400;
+}
+
+.article-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.section__prichina {
+  grid-template-columns: 315px 649px;
+  column-gap: 20px;
+}
+
+
+.section__elements {
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto 431px;
+  column-gap: 20px;
+}
+
+.section__elements .section__title{
+  max-inline-size: 315px;
+}
+
+.section__advice{
+  grid-template-columns: 315px 649px;
+  grid-template-rows: 23px 244px 150px 197px 151px 150px;
+  grid-column: 20px;
+}
+
+.section__gallery {
+  grid-template-rows: auto 142px 355px 237px 355px 237px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.footer {
+  margin-block-start: 20px;
+  min-block-size: 100vh;
+  display: grid;
+  position: relative;
+}
+
+.footer .page_title {
+  justify-self: center;
+  align-self: center;
 }
