@@ -19,6 +19,9 @@
   --font-family: 'IBM Plex mono';
   --font-size: 18px;
   --line-height: 23.4px;
+  --display: none;
+  --acctive-color: none;
+  --button-color: #FF0070;
 }
 
 @media (prefers-color-scheme: light) {
@@ -33,5 +36,8 @@
   --font-family: 'IBM Plex mono';
   --font-size: 18px;
   --line-height: 23.4px;
+  --display: none;
+  --acctive-color: none;
+  --button-color: #FF0070;
   }
 }
