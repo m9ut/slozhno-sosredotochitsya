@@ -395,9 +395,14 @@ padding-bottom: 70px;
   
   .decorated-zone::after{
     inset-inline-start: 0;
-    inset-block-end: 0;
+    inset-block-end: 10px;
   }
   
+  .header__rec{
+    margin-inline-end: 20px;
+    inset-block-start: 10px;
+  }
+
   .header__theme-menu {
     margin-block-start: 65px;
   }
@@ -406,9 +411,9 @@ padding-bottom: 70px;
     gap: 15px;
   }
 
-  .page__title{
+  .page_title{
     font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-  margin: 0;
+    margin: 0;
   }
 
   .main {
@@ -458,5 +463,9 @@ padding-bottom: 70px;
   .footer{
     min-block-size: 668px;
     margin-block-start: 0px;
+  }
+
+  .footer .page_title{
+    margin-block-start: 80px;
   }
 }
